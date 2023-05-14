@@ -1,0 +1,25 @@
+# Compiled class file
+*.class
+
+# Log file
+*.log
+
+# Package Files
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# User-specific stuff
+.idea/
+*.iml
+
+# IntelliJ
+out/
+
+# Other stuff
+.META-INF/
+*.txt
