@@ -2,16 +2,23 @@ package com.javarush.irb;
 
 public class Constants {
 
-    public final String UPPERCASE =     "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-    public final String LOWERCASE =     "abcdefghijklmnopqrstuvwxyz";
-    public final String SYMBOLS =       " !'\"`’()*+-=_.,/|\\:;?#%@[]{}<>^~«»&$¡¢£¤¥¦§¨©®¬¯°±º×¿";
-    public final String NUMBERS =       "0123456789";
-    public final String[] COMMON_WORDS = {"the","and","you","that","was","for","are","with","his","they",
-            "this","have","from","one","had","word","but","not","what","all","were","when","your","can",
-            "said","there","use","each","which","she","how","their","will","other","about","out","many",
-            "then","them","these","some","her","would","make","like","him","into","time","has","look","two",
-            "more","write","see","number","way","could","people","than","first","water","been","call","who",
-            "oil","its","now","find","long","down","day","did","get","come","made","may","part","set","line"};
+    public final String ALPHABET_EN =
+//                    "0123456789" +
+//                    " !'\"`’()*+-=_.,/|\\:;?#%@[]{}<>^~«»&$¡¢£¤¥¦§¨©®¬¯°±º×¿" +
+                    "AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz";
+    public final String[] COMMON_WORDS = {
+            "the", "and", "you", "that", "was", "for", "are", "with", "his", "they", "this", "have", "from", "one",
+            "had", "word", "but", "not", "what", "all", "were", "when", "your", "can", "said", "there", "use", "each",
+            "which", "she", "how", "their", "will", "other", "about", "out", "many", "then", "them", "these", "some",
+            "her", "would", "make", "like", "him", "into", "time", "has", "look", "two", "more", "write", "see",
+            "number", "way", "could", "people", "than", "first", "water", "been", "call", "who", "oil", "its", "now",
+            "find", "long",  "down", "day", "did", "get", "come", "made", "may", "part", "over", "new", "sound", "take",
+            "only", "little", "work", "know", "place", "year", "live", "back", "give", "most", "very", "after", "thing",
+            "our", "just", "name", "good", "sentence", "man", "think", "say", "great", "where", "help", "through",
+            "much", "before", "line", "right", "too", "means", "old", "any", "same", "tell", "boy", "follow", "came",
+            "want", "show", "also", "around", "farm", "three", "small", "set", "put", "end", "pray", "exit", "four",
+            "five", "six", "seven", "eight", "nine", "ten", "hundred", "thousand", "number", "letter"
+    };
     public final String MAIN_MENU =
             """
 
@@ -22,13 +29,13 @@ public class Constants {
 
                      Enter number of preferred action: \
                     """;
-    public final String ENCRYPT_MENU =  "\n Enter path to file to encrypt: ";
-    public final String DECRYPT_MENU =  "\n Enter path to file to decrypt: ";
-    public final String OFFSET_MENU =   "\n Enter cipher shift key: ";
-    public final String FILE_SAVED =    "\n     File saved.";
-    public final String WRONG_ACTION =  "\n Wrong action, please type number between 1 and 3.";
+    public final String ENCRYPT_MENU = "\n Enter path to file to encrypt: ";
+    public final String DECRYPT_MENU = "\n Enter path to file to decrypt: ";
+    public final String OFFSET_MENU = "\n Enter cipher shift key: ";
+    public final String WRONG_ACTION = "\n >>>>>>> Wrong action, please enter a number between 1 and 3.";
+    public final String FILE_SAVED = "\n     Result file saved.";
 
     public int getAlphabetLength() {
-        return UPPERCASE.length();
+        return ALPHABET_EN.length();
     }
 }
